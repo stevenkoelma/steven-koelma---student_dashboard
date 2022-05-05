@@ -1,15 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { names } from "../data";
 
 const Navbar = () => {
+   
+ //TODO Navbar voor studenten uitwerken en namen aanklikbaarmaken
+ //TODO Juiste benaming   
 
-      return (
+
+/*Get alle student names once*/ 
+  const students = [...new Set(names)];
+
+/*Create list item with student name*/  
+  const singleStudent = students.map((student) => {
+    return <li>{student}</li>;
+  });
+
+  return (
     <>
       <header>
         <nav>
-          <ul>
-            <li>{names}</li>
-          </ul>
+          <ul>{singleStudent}</ul>
         </nav>
       </header>
     </>
