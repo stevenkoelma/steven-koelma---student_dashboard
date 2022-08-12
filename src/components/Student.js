@@ -5,15 +5,16 @@ import Chart from "./Chart";
 const Student = ({ students }) => {
   const { name } = useParams();
 
-  const student = students.filter((student) => student.name === name);
+  const selectName = students.filter((student) => student.name === name);
 
-  console.log(student);
+  const foo = selectName.map((element) => element);
 
   //TODO render object
 
   return (
     <div className="chart">
       <h2>{name}</h2>
+      <Chart student={foo} />
     </div>
   );
 };
