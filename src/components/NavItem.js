@@ -5,9 +5,15 @@ const NavItem = ({ name }) => {
   let path = `/student/${name}`;
 
   return (
-    <NavLink to={path} style={{ textDecoration: "none" }} className="nav-item">
-      <li>{name}</li>
-    </NavLink>
+    <li>
+      <NavLink
+        to={path}
+        style={{ textDecoration: "none" }}
+        className="nav-item"
+      >
+        {name}
+      </NavLink>
+    </li>
   );
 };
 

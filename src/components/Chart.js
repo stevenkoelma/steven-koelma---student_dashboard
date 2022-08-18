@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import {
   VictoryBar,
   VictoryChart,
@@ -9,38 +8,75 @@ import {
   VictoryLine,
   VictoryLegend,
   VictoryTooltip,
-  VictoryVoronoiContainer,
 } from "victory";
 
-const Chart = ({ student }) => {
+const Chart = ({ chartdata }) => {
+  console.log(chartdata);
   return (
     <>
-      <VictoryChart>
-        <VictoryGroup>
+      <VictoryChart domain={{ y: [0, 5] }}>
+        <VictoryGroup offset={160 / chartdata.length}>
           <VictoryBar
-            data={student}
+            data={chartdata}
             x="assignment"
             y="difficulty"
-            tickValues={[1, 2, 3, 4, 5]}
+            barWidth={130 / chartdata.length}
             style={{ data: { fill: "#e60505" } }}
-            animate={{
-              duration: 700,
-              onLoad: { duration: 700 },
-            }}
+            tickValues={[1, 2, 3, 4, 5]}
+            tickFormat={chartdata.map((item) => item.assignment)}
+            labelComponent={
+              <VictoryTooltip
+                cornerRadius={2}
+                pointerLength={6}
+                pointerWidth={4}
+                flyoutStyle={{
+                  stroke: "#96b97d",
+                  strokeWidth: 0.4,
+                  fill: "#d6e2f0",
+                }}
+                style={{
+                  fontSize: 6,
+                  fill: "#1d334a",
+                }}
+                animate={{
+                  duration: 700,
+                  onLoad: { duration: 700 },
+                }}
+              />
+            }
           />
           <VictoryBar
-            data={student}
+            data={chartdata}
             x="assignment"
             y="enjoyment"
-            tickValues={[1, 2, 3, 4, 5]}
             style={{ data: { fill: "#05e6a6" } }}
-            animate={{
-              duration: 700,
-              onLoad: { duration: 700 },
-            }}
+            tickValues={[1, 2, 3, 4, 5]}
+            tickFormat={chartdata.map((item) => item.assignment)}
+            labelComponent={
+              <VictoryTooltip
+                cornerRadius={2}
+                pointerLength={6}
+                pointerWidth={4}
+                flyoutStyle={{
+                  stroke: "#96b97d",
+                  strokeWidth: 0.4,
+                  fill: "#d6e2f0",
+                }}
+                style={{
+                  fontSize: 6,
+                  fill: "#1d334a",
+                }}
+                animate={{
+                  duration: 700,
+                  onLoad: { duration: 700 },
+                }}
+              />
+            }
           />
         </VictoryGroup>
         <VictoryAxis
+          tickValues={[1, 2, 3, 4, 5]}
+          tickFormat={chartdata.assignment}
           style={{
             ticks: {
               fill: "transparent",
@@ -54,7 +90,7 @@ const Chart = ({ student }) => {
           tickLabelComponent={
             <VictoryLabel
               angle={() => {
-                return student.length < 16 ? 0 : 60;
+                return chartdata.length < 16 ? 0 : 60;
               }}
               dx={-8.5}
               dy={-6}

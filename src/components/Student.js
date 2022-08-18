@@ -6,15 +6,12 @@ const Student = ({ students }) => {
   const { name } = useParams();
 
   const selectName = students.filter((student) => student.name === name);
-
-  const foo = selectName.map((element) => element);
-
-  //TODO render object
+  const chartdata = selectName.map((element) => element);
 
   return (
     <div className="chart">
       <h2>{name}</h2>
-      <Chart student={foo} />
+      <Chart chartdata={chartdata} />
     </div>
   );
 };
