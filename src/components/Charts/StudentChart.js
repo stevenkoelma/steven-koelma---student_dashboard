@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   VictoryBar,
   VictoryChart,
@@ -10,20 +10,21 @@ import {
   VictoryTooltip,
 } from "victory";
 
-const Chart = ({ chartdata }) => {
-  console.log(chartdata);
+const Chart = ({ singleStudentData }) => {
+  const assignments = singleStudentData.map((item) => item.assignment);
+
   return (
     <>
       <VictoryChart domain={{ y: [0, 5] }}>
-        <VictoryGroup offset={160 / chartdata.length}>
+        <VictoryGroup offset={160 / 56}>
           <VictoryBar
-            data={chartdata}
+            data={singleStudentData}
             x="assignment"
             y="difficulty"
-            barWidth={130 / chartdata.length}
+            barWidth={130 / 56}
             style={{ data: { fill: "#e60505" } }}
             tickValues={[1, 2, 3, 4, 5]}
-            tickFormat={chartdata.map((item) => item.assignment)}
+            tickFormat={assignments}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={2}
@@ -46,12 +47,12 @@ const Chart = ({ chartdata }) => {
             }
           />
           <VictoryBar
-            data={chartdata}
+            data={singleStudentData}
             x="assignment"
             y="enjoyment"
             style={{ data: { fill: "#05e6a6" } }}
             tickValues={[1, 2, 3, 4, 5]}
-            tickFormat={chartdata.map((item) => item.assignment)}
+            tickFormat={assignments}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={2}
@@ -76,7 +77,7 @@ const Chart = ({ chartdata }) => {
         </VictoryGroup>
         <VictoryAxis
           tickValues={[1, 2, 3, 4, 5]}
-          tickFormat={chartdata.assignment}
+          tickFormat={assignments}
           style={{
             ticks: {
               fill: "transparent",
@@ -90,7 +91,7 @@ const Chart = ({ chartdata }) => {
           tickLabelComponent={
             <VictoryLabel
               angle={() => {
-                return chartdata.length < 16 ? 0 : 60;
+                return 56 < 16 ? 0 : 60;
               }}
               dx={-8.5}
               dy={-6}

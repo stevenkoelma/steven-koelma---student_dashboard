@@ -1,17 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Chart from "./Chart";
+import Chart from "./Charts/StudentChart";
 
-const Student = ({ students }) => {
+const Student = ({ studentData }) => {
   const { name } = useParams();
 
-  const selectName = students.filter((student) => student.name === name);
-  const chartdata = selectName.map((element) => element);
+  const selectName = studentData.filter((student) => student.name === name);
+  const singleStudentData = selectName.map((element) => element);
+
+  console.log(singleStudentData);
 
   return (
     <div className="chart">
       <h2>{name}</h2>
-      <Chart chartdata={chartdata} />
+      <Chart singleStudentData={singleStudentData} />
     </div>
   );
 };
