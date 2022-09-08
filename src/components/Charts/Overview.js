@@ -20,7 +20,7 @@ const Chart = () => {
   const assignment = getAveragesDifficulty.map((item) => item.assignment);
 
   return (
-    <>
+    <> 
       <VictoryChart domain={{ y: [0, 5] }}>
         <VictoryGroup offset={160 / assignment.length}>
           <VictoryBar
@@ -56,6 +56,8 @@ const Chart = () => {
             data={averageEnjoyment}
             x="assignment"
             y="difficulty"
+            tickValues={[1, 2, 3, 4, 5]}
+            tickFormat={assignment}
             barWidth={130 / 56}
             style={{ data: { fill: "#00FF00" } }}
             labelComponent={
