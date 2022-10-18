@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Chart from "./Charts/StudentChart";
 import Filter from "./Filter";
 
-const Student = ({ studentData, showchart }) => {
+const Student = ({ studentData }) => {
   const { name } = useParams();
 
   const selectName = studentData.filter((student) => student.name === name);
@@ -11,7 +11,6 @@ const Student = ({ studentData, showchart }) => {
 
   return (
     <>
-      <Filter showchart={showchart} />
       <div className="chart">
         <h2>{name}</h2>
         <Chart singleStudentData={singleStudentData} />

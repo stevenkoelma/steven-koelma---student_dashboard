@@ -5,7 +5,6 @@ import {
   VictoryGroup,
   VictoryAxis,
   VictoryLabel,
-  VictoryLine,
   VictoryLegend,
   VictoryTooltip,
 } from "victory";
@@ -14,13 +13,14 @@ import {
   getAveragesEnjoyment,
 } from "../../functions/Average";
 
-const Chart = () => {
+const Chart = (props) => {
+
   const averageDifficulty = getAveragesDifficulty.map((item) => item.average);
   const averageEnjoyment = getAveragesEnjoyment.map((item) => item.average);
   const assignment = getAveragesDifficulty.map((item) => item.assignment);
 
   return (
-    <> 
+    <>
       <VictoryChart domain={{ y: [0, 5] }}>
         <VictoryGroup offset={160 / assignment.length}>
           <VictoryBar
