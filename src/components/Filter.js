@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Overview from "./Charts/Overview";
-import Difficulty from "./Charts/Difficulty"
-import Enjoyment from "./Charts/Enjoyment"
+import Difficulty from "./Charts/Difficulty";
+import Enjoyment from "./Charts/Enjoyment";
 
 const Filter = () => {
-  const [chart, setChart] = useState("selectChart");
-  const [bothChartsVisible, setBothChartsVisible] = useState(true)
+  const [chart, setChart] = useState(true);
+  const [bothChartsVisible, setBothChartsVisible] = useState(true);
   const [difficultyChartVisible, setDifficultyChartVisible] = useState(false);
   const [enjoymentChartVisible, setEnjoymentChartVisible] = useState(false);
 
@@ -14,9 +14,7 @@ const Filter = () => {
   };
 
   useEffect(() => {
-    chart === "both"
-      ? setBothChartsVisible(true)
-      : setBothChartsVisible(false);
+    chart === "both" ? setBothChartsVisible(true) : setBothChartsVisible(false);
     chart === "difficulty"
       ? setDifficultyChartVisible(true)
       : setDifficultyChartVisible(false);
@@ -25,32 +23,36 @@ const Filter = () => {
       : setEnjoymentChartVisible(false);
   }, [chart]);
 
-  const renderResult = () => {
+  const renderChart = () => {
     let result;
-    chart === "selectDreamCar"
-      ? (result = "select your dream car")
-      : (result = chart);
+    if (chart === true || bothChartsVisible === true) {
+      result = <Overview />;
+    }
+
+    if (difficultyChartVisible === true) {
+      result = <Difficulty />;
+    }
+
+    if (enjoymentChartVisible === true) {
+      result = <Enjoyment />;
+    } 
+
     return result;
   };
 
   return (
     <div className="container">
-      <div>
-        <h1>{renderResult()}</h1>
-      </div>
       <div className="filters">
         <p>Select your filters here:</p>
         <form>
           <select value={chart} onChange={handleOnChange}>
-            <option selected="selected" value="both">Both</option>
+            <option value="both">Both</option>
             <option value="difficulty">Hoe moeilijk was de opdracht?</option>
             <option value="enjoyment">Hoe leuk was de opdracht?</option>
           </select>
         </form>
+        <div>{renderChart()}</div>
       </div>
-      {bothChartsVisible && <Overview />}
-      {difficultyChartVisible && <Difficulty/>}
-      {enjoymentChartVisible && <Enjoyment />}      
     </div>
   );
 };
