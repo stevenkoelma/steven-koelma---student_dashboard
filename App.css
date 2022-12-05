@@ -1,35 +1,22 @@
-.navigation {
-  width: 100%;
-  background-color: #fff;
-}
 .navigation__list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin: 0 auto;
-  max-width: 76rem;
-  padding: 0;
 }
 .navigation__item {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
-.navigation__item:hover {
-  text-decoration: underline;
-}
 .navigation__item.active {
-  text-decoration: underline;
+  background-color: #fff;
+  color: #000;
 }
 
 .header {
   background-color: #0000a4;
-  color: #fff;
+  color: yellow;
 }
 .header__title {
   text-align: center;
-}
-
-.wrap {
-  max-width: 1050px;
-  margin: 0 auto;
+  background-color: red;
 }/*# sourceMappingURL=App.css.map */

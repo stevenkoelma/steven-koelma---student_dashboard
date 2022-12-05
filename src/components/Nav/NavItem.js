@@ -6,11 +6,7 @@ const NavItem = ({ name }) => {
 
   return (
     <li>
-      <NavLink
-        to={path}
-        style={{ textDecoration: "none" }}
-        className="nav-item"
-      >
+      <NavLink to={path} className="nav-item navigation__item">
         {name}
       </NavLink>
     </li>

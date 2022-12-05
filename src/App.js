@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header/Header";
 import Student from "./components/Student";
 import Filter from "./components/Filter";
 import data from "./data";
+
 
 import React, { useState } from "react";
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Header/>
         <Routes>
           <Route
             exact
@@ -26,6 +27,7 @@ function App() {
             element={<Student studentData={students} />}
           ></Route>
         </Routes>
+     
       </Router>
     </>
   );

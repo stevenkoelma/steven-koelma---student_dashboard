@@ -41,7 +41,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="container">
+    <div className="wrap">
       <div className="filters">
         <p>Select your filters here:</p>
         <form>

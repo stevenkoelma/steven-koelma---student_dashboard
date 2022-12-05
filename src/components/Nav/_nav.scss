@@ -1,0 +1,26 @@
+.navigation {
+  width: 100%;
+  background-color: #fff;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 76rem;
+    padding: 0;
+  }
+
+  &__item {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}

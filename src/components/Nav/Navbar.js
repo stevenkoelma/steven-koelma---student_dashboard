@@ -1,10 +1,9 @@
 import React from "react";
 import NavItem from "./NavItem";
 import { NavLink } from "react-router-dom";
-import { names, tasks } from "../data";
+import { names } from "../../data";
 
 const Navbar = () => {
-  /*Get students and assignment names once*/
   const students = [...new Set(names)];
 
   const studentNavigation = students.map((student, index) => {
@@ -13,18 +12,16 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <NavLink className="nav-item" to="/">
-                Alle studenten
-              </NavLink>
-            </li>
-            {studentNavigation}
-          </ul>
-        </nav>
-      </header>
+      <nav className="navigation">
+        <ul className="navigation__list wrap">
+          <li>
+            <NavLink className="nav-item navigation__item" to="/">
+              Alle studenten
+            </NavLink>
+          </li>
+          {studentNavigation}
+        </ul>
+      </nav>
     </>
   );
 };
