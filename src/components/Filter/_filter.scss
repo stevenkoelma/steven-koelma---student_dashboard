@@ -1,0 +1,8 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__form {
+    z-index: 1;
+  }
+}

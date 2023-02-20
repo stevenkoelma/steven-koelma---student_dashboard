@@ -41,7 +41,6 @@ export const getAveragesEnjoyment = assignments.map((assignment) => {
     (item) => item.assignment === assignment
   );
   // get the grades per course
-  console.log("one log per assignment ");
   const courseGrades = assignmentsByCourse.map((value) => {
     return value.enjoyment;
   });

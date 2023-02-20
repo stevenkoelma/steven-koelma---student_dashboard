@@ -1,6 +1,6 @@
 .navigation {
   width: 100%;
-  background-color: #fff;
+  background-color: #ceccd8;
 }
 .navigation__list {
   display: flex;
@@ -22,14 +22,56 @@
 }
 
 .header {
-  background-color: #0000a4;
+  background-color: #08013c;
   color: #fff;
 }
 .header__title {
   text-align: center;
+  margin-top: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  min-height: 100%;
 }
 
 .wrap {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter__form {
+  z-index: 1;
+}
+
+.student__heading {
+  text-align: center;
+}
+
+.footer {
+  background-color: #393463;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  min-height: calc(100vh - 156.44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=App.css.map */

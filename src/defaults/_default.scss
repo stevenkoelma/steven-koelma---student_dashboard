@@ -1,4 +1,12 @@
+body {
+  height: 100vh;
+}
+
+#root {
+  min-height: 100%;
+}
+
 .wrap {
-    max-width: 1050px;
-    margin: 0 auto;
+  max-width: 1050px;
+  margin: 0 auto;
 }

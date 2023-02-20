@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className="navigation__list wrap">
           <li>
             <NavLink className="nav-item navigation__item" to="/">
-              Alle studenten
+              All students
             </NavLink>
           </li>
           {studentNavigation}

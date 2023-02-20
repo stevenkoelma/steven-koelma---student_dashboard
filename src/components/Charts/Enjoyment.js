@@ -4,38 +4,99 @@ import {
   VictoryChart,
   VictoryGroup,
   VictoryAxis,
-  VictoryLabel,
   VictoryLegend,
+  VictoryLabel,
   VictoryTooltip,
+  VictoryLine,
 } from "victory";
-import {
-  getAveragesEnjoyment,
-} from "../../functions/Average";
+import { getAveragesEnjoyment } from "../../functions/Average";
 
 const Chart = () => {
-
-  const averageEnjoyment = getAveragesEnjoyment.map((item) => item.average);
   const assignment = getAveragesEnjoyment.map((item) => item.assignment);
 
   return (
     <>
-      <VictoryChart domain={{ y: [0, 5] }}>
-        <VictoryGroup offset={160 / assignment.length}>          
+      <VictoryChart height={180} padding={20} width={400}>
+        <VictoryLegend
+          x={160}
+          y={10}
+          orientation="horizontal"
+          style={{
+            labels: {
+              fontSize: 12,
+              fill: "#120faa",
+            },
+          }}
+          data={[{ name: "Fun", symbol: { fill: "#6fcb9f", type: "square" } }]}
+        />
+        <VictoryLine
+          y={() => 1}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 2}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 3}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 4}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.3,
+            },
+          }}
+        />
+
+        <VictoryLine
+          y={() => 5}
+          style={{
+            data: {
+              strokeWidth: 0,
+            },
+          }}
+        />
+
+        <VictoryGroup offset={160 / assignment.length}>
           <VictoryBar
-            data={averageEnjoyment}
+            data={getAveragesEnjoyment}
+            alignment="middle"
             x="assignment"
-            y="difficulty"
-            tickValues={[1, 2, 3, 4, 5]}
-            tickFormat={assignment}
-            barWidth={130 / 56}
-            style={{ data: { fill: "#00FF00" } }}
+            y="average"
+            animate={{
+              duration: 700,
+              onLoad: { duration: 700 },
+            }}
+            barWidth={130 / assignment.length}
+            style={{ data: { fill: "#6fcb9f" } }}
+            labels={({ datum }) => {
+              return `Average : ${datum.average}`;
+            }}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={2}
-                pointerLength={6}
+                pointerLength={60}
                 pointerWidth={4}
                 flyoutStyle={{
-                  stroke: "#96b97d",
+                  stroke: "#6fcb9f",
                   strokeWidth: 0.4,
                   fill: "#d6e2f0",
                 }}
@@ -43,16 +104,12 @@ const Chart = () => {
                   fontSize: 6,
                   fill: "#1d334a",
                 }}
-                animate={{
-                  duration: 700,
-                  onLoad: { duration: 700 },
-                }}
               />
             }
           />
         </VictoryGroup>
         <VictoryAxis
-          tickValues={[1, 2, 3, 4, 5]}
+          domain={{ x: [0, 57] }}
           tickFormat={assignment}
           style={{
             ticks: {
@@ -74,6 +131,7 @@ const Chart = () => {
               style={{
                 fontSize: 4,
                 fill: "#223243",
+                fontWeight: "bold",
               }}
               textAnchor={"start"}
             />

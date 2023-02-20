@@ -7,84 +7,147 @@ import {
   VictoryLabel,
   VictoryLegend,
   VictoryTooltip,
+  VictoryLine,
 } from "victory";
+
 import {
   getAveragesDifficulty,
   getAveragesEnjoyment,
 } from "../../functions/Average";
 
-const Chart = (props) => {
-
-  const averageDifficulty = getAveragesDifficulty.map((item) => item.average);
-  const averageEnjoyment = getAveragesEnjoyment.map((item) => item.average);
+const Chart = () => {
   const assignment = getAveragesDifficulty.map((item) => item.assignment);
 
   return (
     <>
-      <VictoryChart domain={{ y: [0, 5] }}>
+      <VictoryChart height={180} padding={20} width={400}>
+        <VictoryLegend
+          x={140}
+          y={10}
+          gutter={20}
+          orientation="horizontal"
+          style={{
+            labels: {
+              fontSize: 12,
+              fill: "#120faa",
+            },
+          }}
+          data={[
+            { name: "Difficulty", symbol: { fill: "#c03535", type: "square" } },
+            { name: "Fun", symbol: { fill: "#6fcb9f", type: "square" } },
+          ]}
+        />
+        <VictoryLine
+          y={() => 1}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 2}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 3}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.2,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 4}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0.3,
+            },
+          }}
+        />
+        <VictoryLine
+          y={() => 5}
+          style={{
+            data: {
+              stroke: "black",
+              strokeWidth: 0,
+            },
+          }}
+        />
+
         <VictoryGroup offset={160 / assignment.length}>
           <VictoryBar
-            data={averageDifficulty}
+            data={getAveragesDifficulty}
             x="assignment"
-            y="difficulty"
+            y="average"
+            animate={{
+              duration: 700,
+              onLoad: { duration: 700 },
+            }}
+            labels={({ datum }) => {
+              return `Average : ${datum.average}`;
+            }}
             barWidth={130 / assignment.length}
-            style={{ data: { fill: "#e60505" } }}
-            tickValues={[1, 2, 3, 4, 5]}
+            style={{ data: { fill: "#c03535" } }}
             tickFormat={assignment}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={2}
-                pointerLength={6}
+                pointerLength={60}
                 pointerWidth={4}
                 flyoutStyle={{
-                  stroke: "#96b97d",
+                  stroke: "#c03535",
                   strokeWidth: 0.4,
                   fill: "#d6e2f0",
                 }}
                 style={{
                   fontSize: 6,
                   fill: "#1d334a",
-                }}
-                animate={{
-                  duration: 700,
-                  onLoad: { duration: 700 },
                 }}
               />
             }
           />
           <VictoryBar
-            data={averageEnjoyment}
+            data={getAveragesEnjoyment}
+            barWidth={130 / assignment.length}
+            style={{ data: { fill: "#6fcb9f" } }}
             x="assignment"
-            y="difficulty"
-            tickValues={[1, 2, 3, 4, 5]}
-            tickFormat={assignment}
-            barWidth={130 / 56}
-            style={{ data: { fill: "#00FF00" } }}
+            y="average"
+            animate={{
+              duration: 700,
+              onLoad: { duration: 700 },
+            }}
+            labels={({ datum }) => {
+              return `Average : ${datum.average}`;
+            }}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={2}
-                pointerLength={6}
+                pointerLength={60}
                 pointerWidth={4}
                 flyoutStyle={{
-                  stroke: "#96b97d",
+                  stroke: "#6fcb9f",
                   strokeWidth: 0.4,
                   fill: "#d6e2f0",
                 }}
                 style={{
                   fontSize: 6,
                   fill: "#1d334a",
-                }}
-                animate={{
-                  duration: 700,
-                  onLoad: { duration: 700 },
                 }}
               />
             }
           />
         </VictoryGroup>
+
         <VictoryAxis
-          tickValues={[1, 2, 3, 4, 5]}
-          tickFormat={assignment}
           style={{
             ticks: {
               fill: "transparent",
@@ -97,14 +160,13 @@ const Chart = (props) => {
           }}
           tickLabelComponent={
             <VictoryLabel
-              angle={() => {
-                return assignment.length < 16 ? 0 : 60;
-              }}
+              angle={65}
               dx={-8.5}
-              dy={-6}
+              dy={-5}
               style={{
                 fontSize: 4,
                 fill: "#223243",
+                fontWeight: "bold",
               }}
               textAnchor={"start"}
             />
@@ -112,7 +174,6 @@ const Chart = (props) => {
         />
         <VictoryAxis
           dependentAxis
-          domain={[0, 5]}
           style={{
             tickLabels: {
               fontSize: 4,

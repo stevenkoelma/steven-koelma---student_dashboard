@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Overview from "./Charts/Overview";
-import Difficulty from "./Charts/Difficulty";
-import Enjoyment from "./Charts/Enjoyment";
+import Overview from "../Charts/Overview";
+import Difficulty from "../Charts/Difficulty";
+import Enjoyment from "../Charts/Enjoyment";
 
 const Filter = () => {
   const [chart, setChart] = useState(true);
@@ -35,25 +35,29 @@ const Filter = () => {
 
     if (enjoymentChartVisible === true) {
       result = <Enjoyment />;
-    } 
+    }
 
     return result;
   };
 
   return (
-    <div className="wrap">
-      <div className="filters">
-        <p>Select your filters here:</p>
-        <form>
-          <select value={chart} onChange={handleOnChange}>
-            <option value="both">Both</option>
-            <option value="difficulty">Hoe moeilijk was de opdracht?</option>
-            <option value="enjoyment">Hoe leuk was de opdracht?</option>
-          </select>
-        </form>
+    <>
+      <div className="chart wrap">
+        <div className="filter">
+          <p>Select your filters here:</p>
+          <form className="filter__form">
+            <select value={chart} onChange={handleOnChange}>
+              <option value="both">Both</option>
+              <option value="difficulty">
+                How difficult was the assignment?
+              </option>
+              <option value="enjoyment">How nice was the assignment?</option>
+            </select>
+          </form>
+        </div>
         <div>{renderChart()}</div>
       </div>
-    </div>
+    </>
   );
 };
 

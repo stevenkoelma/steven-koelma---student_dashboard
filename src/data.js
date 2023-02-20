@@ -79,7 +79,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 5,
     enjoyment: 5,
   },
@@ -93,14 +93,14 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 3,
     enjoyment: 4,
   },
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 3,
     enjoyment: 3,
   },
@@ -184,7 +184,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -282,7 +282,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 2,
     enjoyment: 5,
   },
@@ -352,7 +352,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 1,
     enjoyment: 5,
   },
@@ -366,7 +366,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 4,
     enjoyment: 3,
   },
@@ -387,7 +387,7 @@ const data = [
   {
     name: "Evelyn",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 5,
     enjoyment: 5,
   },
@@ -471,7 +471,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 2,
     enjoyment: 3,
   },
@@ -485,14 +485,14 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 4,
     enjoyment: 3,
   },
   {
     name: "Aranka",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -576,7 +576,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -674,7 +674,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 1,
     enjoyment: 1,
   },
@@ -744,7 +744,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 4,
     enjoyment: 4,
   },
@@ -758,7 +758,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 3,
     enjoyment: 2,
   },
@@ -779,7 +779,7 @@ const data = [
   {
     name: "Aranka",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -863,7 +863,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -877,14 +877,14 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 4,
     enjoyment: 3,
   },
   {
     name: "Floris",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 4,
     enjoyment: 4,
   },
@@ -968,7 +968,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -1066,7 +1066,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 4,
     enjoyment: 2,
   },
@@ -1136,7 +1136,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -1150,7 +1150,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -1171,7 +1171,7 @@ const data = [
   {
     name: "Floris",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -1255,7 +1255,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -1269,14 +1269,14 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 1,
     enjoyment: 3,
   },
   {
     name: "Hector",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -1360,7 +1360,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -1458,7 +1458,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -1528,7 +1528,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -1542,7 +1542,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -1563,7 +1563,7 @@ const data = [
   {
     name: "Hector",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -1647,7 +1647,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -1661,14 +1661,14 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 1,
     enjoyment: 3,
   },
   {
     name: "Martina",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 1,
     enjoyment: 4,
   },
@@ -1752,7 +1752,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -1850,7 +1850,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 2,
     enjoyment: 3,
   },
@@ -1920,7 +1920,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -1934,7 +1934,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 1,
     enjoyment: 1,
   },
@@ -1955,7 +1955,7 @@ const data = [
   {
     name: "Martina",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 1,
     enjoyment: 4,
   },
@@ -2039,7 +2039,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 1,
     enjoyment: 1,
   },
@@ -2053,14 +2053,14 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 4,
     enjoyment: 1,
   },
   {
     name: "Maurits",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 3,
     enjoyment: 2,
   },
@@ -2144,7 +2144,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -2242,7 +2242,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -2312,7 +2312,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 2,
     enjoyment: 3,
   },
@@ -2326,7 +2326,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 4,
     enjoyment: 2,
   },
@@ -2347,7 +2347,7 @@ const data = [
   {
     name: "Maurits",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 3,
     enjoyment: 3,
   },
@@ -2431,7 +2431,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -2445,14 +2445,14 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 2,
     enjoyment: 4,
   },
   {
     name: "Rahima",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 3,
     enjoyment: 3,
   },
@@ -2536,7 +2536,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 3,
     enjoyment: 1,
   },
@@ -2634,7 +2634,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -2704,7 +2704,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 1,
     enjoyment: 2,
   },
@@ -2718,7 +2718,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 2,
     enjoyment: 3,
   },
@@ -2739,7 +2739,7 @@ const data = [
   {
     name: "Rahima",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -2823,7 +2823,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -2837,14 +2837,14 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 1,
     enjoyment: 3,
   },
   {
     name: "Sandra",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 3,
     enjoyment: 3,
   },
@@ -2928,7 +2928,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -3026,7 +3026,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 1,
     enjoyment: 2,
   },
@@ -3096,7 +3096,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -3110,7 +3110,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -3131,7 +3131,7 @@ const data = [
   {
     name: "Sandra",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -3215,7 +3215,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -3229,14 +3229,14 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 2,
     enjoyment: 3,
   },
   {
     name: "Wietske",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 3,
     enjoyment: 3,
   },
@@ -3320,7 +3320,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 2,
     enjoyment: 2,
   },
@@ -3418,7 +3418,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 2,
     enjoyment: 4,
   },
@@ -3488,7 +3488,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 4,
     enjoyment: 2,
   },
@@ -3502,7 +3502,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 4,
     enjoyment: 2,
   },
@@ -3523,7 +3523,7 @@ const data = [
   {
     name: "Wietske",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 1,
     enjoyment: 2,
   },
@@ -3607,7 +3607,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W1D3 - Project - Guess-the-number",
+    assignment: "W1D3 - *",
     difficulty: 3,
     enjoyment: 4,
   },
@@ -3621,14 +3621,14 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W1D4 - Project - Kleurentoggle",
+    assignment: "W1D4 - *",
     difficulty: 3,
     enjoyment: 2,
   },
   {
     name: "Storm",
     checked: true,
-    assignment: "W1D5 - Project - Galgje",
+    assignment: "W1D5 - *",
     difficulty: 4,
     enjoyment: 4,
   },
@@ -3712,7 +3712,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W2D5 - Project - Filmzoeker",
+    assignment: "W2D5 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -3810,7 +3810,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W3D5 - Project - Todo-List",
+    assignment: "W3D5 - *",
     difficulty: 3,
     enjoyment: 2,
   },
@@ -3880,7 +3880,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W4D3 - Project - Next-Level CSS",
+    assignment: "W4D3 - *",
     difficulty: 4,
     enjoyment: 1,
   },
@@ -3894,7 +3894,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W5D5 - Project - Lil_Playlist",
+    assignment: "W5D5 - *",
     difficulty: 1,
     enjoyment: 2,
   },
@@ -3915,7 +3915,7 @@ const data = [
   {
     name: "Storm",
     checked: true,
-    assignment: "W6D2 - Project - Eindopdracht",
+    assignment: "W6D2 - *",
     difficulty: 3,
     enjoyment: 3,
   },
